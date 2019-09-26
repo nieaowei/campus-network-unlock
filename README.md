@@ -29,7 +29,7 @@
 
 方法一 该方法失败的情况下请采用方法二。
 
-`curl https://raw.githubusercontent.com/nieaowei/campus_network_unlock/master/install.sh ｜ bash`
+`curl https://raw.githubusercontent.com/nieaowei/campus_network_unlock/master/install.sh|bash`
 
 方法二 步骤比较繁琐。  
 
@@ -64,7 +64,8 @@
 
 5. 修改配置文件端口(可选)，根据端口的开放性配置，我配置的是68端口。  
 打开上述配置文件，修改如下行，中间的域名可以修改为服务器ip，也可以不做修改，后面的67端口可修改为53，67，68，69。  
-![alt ](https://s2.ax1x.com/2019/09/26/unb63j.jpg)
+![alt ](https://s2.ax1x.com/2019/09/26/unb63j.jpg)  
+
 > ## (2). 各平台客户端下载使用  
 使用下列客户端导入上面生成的配置文件即可，
 > Android  
