@@ -6,6 +6,8 @@ ADD vpn_server.config /usr/local/vpnserver
 
 WORKDIR /usr/local/vpnserver
 
-RUN ls /usr/bin && yum install -y gcc automake autoconf libtool make grep && make
+RUN yum install -y which gcc automake autoconf libtool make&& sh -c '/bin/echo -e "1\n1\n1\n" | make' && chmod 777 vpnserver
 
-ENTRYPOINT [ "./vpnserver","start" ]
+EXPOSE 443/tcp
+
+ENTRYPOINT [ "./vpnserver","execsvc"]
