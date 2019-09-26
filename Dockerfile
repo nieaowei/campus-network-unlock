@@ -1,4 +1,4 @@
-FROM centos:lastest
+FROM centos:latest
 
 RUN tar -C /usr/local -xzf softether-vpnserver.tar.gz
 
