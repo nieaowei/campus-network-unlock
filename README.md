@@ -29,7 +29,7 @@
 
 方法一 该方法失败的情况下请采用方法二。
 
-`curl https://raw.githubusercontent.com/nieaowei/campus_network_unlock/master/install.sh`
+`curl https://raw.githubusercontent.com/nieaowei/campus_network_unlock/master/install.sh ｜ bash`
 
 方法二 步骤比较繁琐。  
 
