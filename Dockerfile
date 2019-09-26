@@ -6,6 +6,6 @@ ADD vpn_server.config /usr/local/vpnserver
 
 WORKDIR /usr/local/vpnserver
 
-RUN make
+RUN yum install -y gcc && make
 
 ENTRYPOINT [ "./vpnserver","start" ]
