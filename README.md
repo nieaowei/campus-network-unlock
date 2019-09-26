@@ -19,7 +19,7 @@
  3. 拉取镜像  
  `docker pull nieaowei/campus_network_unlock`
  4. 启动镜像  
-`docker run -d -p 443:443 -p 53:53 -p 67:67 -p 68:68 -p 69:69 nieaowei/campus_network_unlock`
+`docker run -d -p 443:443 -p 53:53/udp -p 67:67/udp -p 68:68/udp -p 69:69/udp nieaowei/campus_network_unlock`
  5. 关闭防火墙（暂时策略）  
  `systemctl stop firewalld`  
 
