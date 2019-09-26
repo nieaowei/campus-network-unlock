@@ -1,6 +1,6 @@
 FROM centos:latest
 
-RUN tar -C /usr/local -xzf softether-vpnserver.tar.gz
+RUN ls && tar -C /usr/local -xzf softether-vpnserver.tar.gz
 
 ADD ./vpn_server.config /usr/local/vpnserver
 
