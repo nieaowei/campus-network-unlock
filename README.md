@@ -22,7 +22,13 @@
 >## (2). 自动化脚本部署 
 
 >### Centos7  
-由于没有脚本托管服务器，步骤也比较繁琐。
+
+方法一 该方法失败的情况下请采用方法二。
+
+`curl https://raw.githubusercontent.com/nieaowei/campus_network_unlock/master/install.sh`
+
+方法二 步骤比较繁琐。  
+
 1. 将该项目克隆至服务器  
 `git clone https://github.com/nieaowei/campus_network_unlock.git`  
 如果提示git命令不存在，请执行如下语句再执行以上语句  
