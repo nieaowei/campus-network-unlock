@@ -4,8 +4,9 @@
 >## 注意事项  
 1. 对于一些centos可能需要手动打开防火墙端口，或者直接关掉。  
 2. 像阿里云这样的需要去阿里云的控制台添加防火墙规则，可以全部打开，但没必要，打开443/tcp，53/udp，67/udp，68/udp，69/udp等需要用到的端口即可。  
-3. 对于阿里云的服务器，在系统内部可以直接关掉防火墙，默认好像是直接关掉的   `systemctl stop firewalld`
+3. 对于阿里云的服务器，在系统内部可以直接关掉防火墙，默认好像是直接关掉的   `systemctl stop firewalld`  
 
+![alt 图2](https://s2.ax1x.com/2019/09/27/uuoNVS.jpg)
 ---
 ># 一、服务器部署
 暂时只提供对centos7的支持。
@@ -39,14 +40,25 @@
 `yum install -y git`
 2. 进入项目目录并修改shell脚本权限  
 `cd campus_network_unlock && chmod 777 install.sh`
-3. 执行可执行文件  
+3. 执行脚本文件  
 `./install.sh`
   
 ---
 ># 二、客户端使用
 
 > ## (1). 生成OpenVPN配置文件
-这里采用最简单的方式。  
+
+> 方法一 这里采用最简单的方式，修改已生成的配置文件。（该方法失效的情况，请使用方法二）  
+  
+  1. 下载配置文件  [点击下载](https://pan.baidu.com/s/1tewjqdYAXKszknQ2RgDHFg)
+
+
+  2. 修改配置文件端口(可选)，根据端口的开放性配置，我配置的是68端口。  
+打开上述配置文件，修改如下行，中间的域名可以修改为服务器ip，也可以不做修改，后面的67端口可修改为53，67，68，69。  
+![alt ](https://s2.ax1x.com/2019/09/27/uuIIHS.jpg)  
+
+> 方法二 使用服务器管理工具生成。  
+
 1. 下载softether服务器管理工具。  
 `链接:https://pan.baidu.com/s/1DNjE5r22r9otcNWxruvykA  密码:4q7d`  
 
