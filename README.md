@@ -6,26 +6,14 @@
 1. 对于一些centos可能需要手动打开防火墙端口，或者直接关掉。  
 2. 像阿里云这样的需要去阿里云的控制台添加防火墙规则，可以全部打开，但没必要，打开443/tcp，53/udp，67/udp，68/udp，69/udp等需要用到的端口即可。  
 3. 对于阿里云的服务器，在系统内部可以直接关掉防火墙，默认好像是直接关掉的   `systemctl stop firewalld`  
+4. 关于服务器的延迟问题，与服务器的网络有关，有些服务器可能为长城宽带，无论是否游戏延迟都很高。
 
 ![alt 图2](https://s2.ax1x.com/2019/09/27/uuoNVS.jpg)
 ---
 ># 一、服务器部署
 暂时只提供对centos7的支持。
->## (1). 手动安装docker部署
 
->### Centos7
- 1. 安装docker
-`curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun` 
- 2. 启动docker  
- `systemctl start docker`
- 3. 拉取镜像  
- `docker pull nieaowei/campus_network_unlock`
- 4. 启动镜像  
-`docker run -d -p 443:443 -p 53:53/udp -p 67:67/udp -p 68:68/udp -p 69:69/udp nieaowei/campus_network_unlock`
- 5. 关闭防火墙（暂时策略）  
- `systemctl stop firewalld`  
-
->## (2). 自动化脚本部署 
+>## (1). 自动化脚本部署 
 
 >### Centos7  
 
@@ -44,6 +32,22 @@
 3. 执行脚本文件  
 `./install.sh`
   
+>## (2). 手动安装docker部署
+
+>### Centos7
+ 1. 安装docker
+`curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun` 
+ 2. 启动docker  
+ `systemctl start docker`
+ 3. 拉取镜像  
+ `docker pull nieaowei/campus_network_unlock`
+ 4. 启动镜像  
+`docker run --net=host -d nieaowei/campus_network_unlock`  
+如果提示端口被占用，请运行如下语句，再重试上列语句：  
+`ps -ef | grep dchclient grep -v grep | awk '{print $2}' | xargs kill -9`
+ 5. 关闭防火墙（暂时策略）  
+ `systemctl stop firewalld`  
+
 ---
 ># 二、客户端使用
 
@@ -80,7 +84,7 @@
 ![alt ](https://s2.ax1x.com/2019/09/26/unb63j.jpg)  
 
 > ## (2). 各平台客户端下载使用  
-使用下列客户端导入上面生成的配置文件，输入账号密码即可，默认账号：123，密码：123，可以使用服务器管理工具增加账号。
+使用下列客户端导入上面生成的配置文件，输入账号密码即可，默认账号：nieaowei，密码：nieaowei，可以使用服务器管理工具增加账号。
 > Android [点击下载](https://www.lanzous.com/i6ilj4d
 )   
 
