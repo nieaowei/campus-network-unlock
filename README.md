@@ -94,6 +94,9 @@
 > Windows  [点击下载](https://www.lanzous.com/i6ilidg
 )   
 
-> MacOS  [点击下载](https://www.lanzous.com/i6iliib
+> MacOS  [点击下载](https://www.lanzous.com/i6z88if
 )   
-解压密码为 `xclient.info`  
+破解密钥：
+>- Name: The Shark  
+>- Mail: deep@sea.com  
+>- Serial: VM1U-JKJRW4-2NSXY4-G25K7Q-AU6LCU-I56CL4
