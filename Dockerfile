@@ -5,10 +5,11 @@ ADD softether-vpnserver.tar.gz /usr/local
 WORKDIR /usr/local/vpnserver
 
 ADD ./vpn_server.config /usr/local/vpnserver
+ADD ./speederv2_binaries.tar.gz /usr/local/vpnserver
 
 RUN yum install -y which gcc automake autoconf libtool make&& sh -c '/bin/echo -e "1\n1\n1\n" | make' && chmod 777 vpnserver \
-    && wget https://github.com/wangyu-/UDPspeeder/releases/download/20180522.0/speederv2_binaries.tar.gz \
-    && tar zxvf speederv2_binaries.tar.gz \
+    # && wget https://github.com/wangyu-/UDPspeeder/releases/download/20180522.0/speederv2_binaries.tar.gz \
+    # && tar zxvf speederv2_binaries.tar.gz \
     && ./vpnserver start
 # ADD ./vpn_server.config /usr/local/vpnserver
 # ADD ./start.sh /usr/local/vpnserver
