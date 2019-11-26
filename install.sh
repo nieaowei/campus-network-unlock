@@ -10,4 +10,8 @@ docker pull nieaowei/campus_network_unlock
 echo "The dchlient is closing. The port 68 is open for docker."
 ps -ef | grep dhclient | grep -v grep | awk '{print $2}' | xargs kill -9
 docker run --net=host -d nieaowei/campus_network_unlock
-echo "The container is started."
+mkdir ~/auto-script && cd ~/auto-script
+curl -O https://raw.githubusercontent.com/nieaowei/campus_network_unlock/master/campus_network_unlock.sh | bash
+echo "Add auto start scripts."
+bash "echo \"~/auto-scripts/campus_network_unlock.sh\" >> /etc/rc.d/rc.local"
+chmod +x /etc/rc.d/rc.local
