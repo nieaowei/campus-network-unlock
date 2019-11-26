@@ -14,5 +14,5 @@ mkdir ~/auto-scripts && cd ~/auto-scripts
 curl -O https://raw.githubusercontent.com/nieaowei/campus_network_unlock/master/campus_network_unlock.sh
 chmod +x campus_network_unlock.sh && ./campus_network_unlock.sh
 echo "Add auto start scripts."
-bash "echo \"~/auto-scripts/campus_network_unlock.sh\" >> /etc/rc.d/rc.local"
 chmod +x /etc/rc.d/rc.local
+echo "~/auto-scripts/campus_network_unlock.sh" >> /etc/rc.d/rc.local
