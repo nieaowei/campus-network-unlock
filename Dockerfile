@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7
 
 ADD softether-vpnserver.tar.gz /usr/local
 
