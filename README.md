@@ -59,7 +59,7 @@
 
 > 方法一 这里采用最简单的方式，修改已生成的配置文件。（该方法失效的情况，请使用方法二）  
   
-  1. 下载配置文件  [点击下载](https://www.lanzous.com/i6iljpe)
+  1. 下载配置文件  [点击下载](https://nekilc.lanzouw.com/i6iljpe)
 
 
   2. 修改配置文件端口(可选)，根据端口的开放性配置，我配置的是68端口。  
@@ -68,7 +68,7 @@
 
 > 方法二 使用服务器管理工具生成。  
 
-1. 下载softether服务器管理工具。[点击下载](https://www.lanzous.com/i6ilhre
+1. 下载softether服务器管理工具。[点击下载](https://nekilc.lanzouw.com/i6ilhre
 )  
 
 2. 安装。  
@@ -89,16 +89,16 @@
 
 > ## (2). 各平台客户端下载使用  
 使用下列客户端导入上面生成的配置文件，输入账号密码即可，默认账号：nieaowei，密码：nieaowei，可以使用服务器管理工具增加账号。
-> Android [点击下载](https://www.lanzous.com/i6ilj4d
+> Android [点击下载](https://nekilc.lanzouw.com/i6ilj4d
 )   
 
 > IOS  
 请使用美区账号登录appstore搜索openVPN,切记不可登录icloud的，否则会锁机。  
 
-> Windows  [点击下载](https://www.lanzous.com/i6ilidg
+> Windows  [点击下载](https://nekilc.lanzouw.com/i6ilidg
 )   
 
-> MacOS  [点击下载](https://www.lanzous.com/i6z88if
+> MacOS  [点击下载](https://nekilc.lanzouw.com/i6z88if
 )   
 破解密钥：
 >- Name: The Shark  
